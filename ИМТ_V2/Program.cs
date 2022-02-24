@@ -26,26 +26,6 @@ static string YW(double bmi)
     return YourW;
 }
 
-static string LosGetW(double bmi)
-{
-    if (bmi < 18.5)
-    {
-        do
-        {
-            bmi = (bmi + 0.1);
-        }
-        while (bmi >= 18.5);
-        return $"Вам нужно набрать {bmi:F3}кг.";
-    }
-    else if (bmi > 25)
-    {
-        do
-        {
-            bmi = (bmi - 0.1);
-        }
-        while (bmi <= 25);
-        return $"Вам нужно похудеть на {bmi:F3}кг.";
-    }
-    else
-        return "Вам не нужно набирать/снижать свой вес";
-}
+if (m < 18.5) 18.5 * h * h - m = dm
+        //Здравствуйте, Андрей Александрович. У меня во втором д/з была ошибка в ИМТ_V2,
+        //вместо массы работал с самим ИМТ и можно было решить более лаконично (if (imt < 18.5) 18.5 * h * h - m =) 
